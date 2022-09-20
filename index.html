@@ -1,0 +1,160 @@
+<link rel="stylesheet" href="style.css">
+<link rel="script" href="index.js">
+<html>
+    
+    <div class="header">
+    <img src="http://www.aeroway.net/sites/default/files/logo-sample.png" alt="Home"></a>
+    <div>
+     <h1 style="text-align: center;">Aeroway</h1> 
+     <div class="int"> Wireless Internet Service Provider - ISP | Mysore</div>
+    </div>
+</div>
+
+
+
+     
+<div class="menu">
+<ul class="menu-bar">
+   <a class="menubar" href="http://www.aeroway.net/about-us">AboutUs</a> 
+   <a class="menubar" href="http://www.aeroway.net/advantages">Advantages</a>
+   <a class="menubar"	href="http://www.aeroway.net/tariff" >Tariff</a> 
+    <a class="menubar"	href="http://www.aeroway.net/terms-and-conditions" >Terms&Conditions</a>
+   <a class="menubar" href="http://www.aeroway.net/contact-us" >ContactUs</a> 
+</ul>
+</div>
+ 
+    <div class="bgforpayment">
+
+     <h3 class="payment" style="text-align:center;">You can make payment directly on Google Pay</h3>
+        <div style="text-align: center;"><img src="	https://aeroway.entriver.com/image/GooglePay.jpeg" width="284" height="400">
+        </div>
+</div>
+    </div>
+<div class="bgforpayment">
+
+<div class="form">
+    <h4 class="form"> Select Packages & Pay us here</h4>
+    
+    <label class="control" for="code"> Plan:</label>
+    <select class="form-control" id="sel1">
+        <option value="0" disabled="" selected="">Select Plan</option>  
+        <option value="200">Static IP - Monthly Charges - Rs.200/- </option>
+        <option value="2400">Static IP - Lifetime Charges - Rs.2400/- </option>
+        <option disabled=""></option>
+        <option disabled="" class="exciting">     **** New Exciting Offers  ****</option>
+        <option disabled="" class="bold">              Unlimited Plans         </option>
+        <option disabled=""></option>
+        <option value="499">30 MBPS - unlimited - 30 Days - Rs. 499/- </option>
+        <option value="649">50 MBPS - unlimited - 30 Days - Rs. 649/- </option>
+        <option value="749">100 MBPS - unlimited - 30 Days - Rs. 749/- </option>
+        <option value="899">150 MBPS - unlimited - 30 Days - Rs. 899/- </option>
+
+    </select><br>
+    
+  
+
+</div>
+
+<div class="form row">
+    <label class="control label" for="code"> Customer ID:</label>
+   <input type="text " class="form-control" placeholder="Enter aeroway id">
+
+</div>
+<div class="form row">
+    <label class="control label" for="code"> Customer Name:</label>
+   <input type="text " class="form-control" placeholder="Enter Your name">
+
+</div>
+<div class="button" style="margin-top: 20px;">
+<button id="rzp-button1" type="button" class="primary"> Pay Online</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var options = {
+    "key":  "rzp_test_KACgMJ0cwHq41T",
+    "amount": "1000",
+    "currency": "INR",
+    "description": "Aeroway Network Pvt Ltd",
+    "image": "./logo-sample.png",
+    "prefill":
+    {
+      "email": "gaurav.kumar@example.com",
+      "contact": +919900000000,
+    },
+    config: {
+      display: {
+        blocks: {
+          hdfc: { //name for HDFC block
+            name: "Pay using HDFC Bank",
+            instruments: [
+              {
+                method: "card",
+                issuers: ["HDFC"]
+              },
+              {
+                method: "netbanking",
+                banks: ["HDFC"]
+              },
+            ]
+          },
+          other: { //  name for other block
+            name: "Other Payment modes",
+            instruments: [
+              {
+                method: "card",
+                issuers: ["ICIC"]
+              },
+              {
+                method: 'netbanking',
+              }
+            ]
+          }
+        },
+        hide: [
+          {
+          method: "upi"
+          }
+        ],
+        sequence: ["block.hdfc", "block.other"],
+        preferences: {
+          show_default_blocks: false // Should Checkout show its default blocks?
+        }
+      }
+    },
+    "handler": function (response) {
+      alert(response.razorpay_payment_id);
+    },
+    "modal": {
+      "ondismiss": function () {
+        if (confirm("Are you sure, you want to close the form?")) {
+          txt = "You pressed OK!";
+          console.log("Checkout form closed by the user");
+        } else {
+          txt = "You pressed Cancel!";
+          console.log("Complete the Payment")
+        }
+      }
+    }
+  };
+  var rzp1 = new Razorpay(options);
+  document.getElementById('rzp-button1').onclick = function (e) {
+    rzp1.open();
+    e.preventDefault();
+  }
+</script>
+
+
+
+</div>
+<div class="note">
+<br/> <b style="margin-left:15px;"> Please Note : </b>GST is applicable on all service charges.</div>
+
+</div>
+<div class="footer">
+<p style="text-align:center;">
+    <a class="foot" href="http://www.entriver.com">River Engineering and Technology Services</a>
+</p>
+
+</div>
+
+</body>
+</html>

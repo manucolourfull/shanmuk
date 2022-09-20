@@ -1,0 +1,156 @@
+.header{
+ 
+    font-size:1rem;
+    width:105%;
+    height:fit-content;
+    text-align:inherit;
+    font-weight: normal;
+    color: #319CC2;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+background-color: beige;
+font-family: Arial, Helvetica, sans-serif;
+}
+.aero{
+    float: left;
+    padding-top: 0px;
+    margin:0 0 30px 15px;
+    color: #319CC2;
+    font-size:  50px;
+    text-decoration: none;
+}
+.menu{
+    background-color: #1070c2;
+    font-size: 15px;
+    width: 105%;
+    height: 5%;
+    color: #fff;
+word-spacing: 13px;
+font-weight: bold;
+font-family: sans-serif;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+position: relative;
+display: block;
+margin-top: 0%;
+
+
+  
+}
+.int{
+    color: #000;
+    text-align: center;
+    padding-left: 20px;
+   padding-top: 0%;
+   margin-top: 0%;
+   font-style: italic;
+   font-size: 0.929em;
+}
+.payment{
+    color: black;
+   text-align: center;
+   border-style: solid ,1% solid blue;
+   font-family: sans-serif;
+   font-weight: 500;
+}
+
+.bgforpayment{
+    border-radius: 10px;
+    border: 3px solid #0275d8;
+    padding: 20px;
+    margin: 20px;
+    width: 95%;
+height: 500px;
+}
+.form{
+ color:inherit;
+ font-size: 18px;
+ font-family: sans-serif;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ font-weight: 500;
+ 
+ 
+
+}
+
+.primary{
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+    padding: 10px 13px;
+    margin-top: 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: x-large;
+    white-space: nowrap;
+    touch-action: manipulation;
+    text-transform: none;
+    overflow: visible;
+    display: inline-block;
+   
+}
+.form-control{
+    width: 100%;
+    height: 12%;
+}
+.note{
+    color: black;
+}
+.image{
+ position: center;
+}
+.footer{
+    background-color: #0275d8;
+    width: 105%;
+    color: #fff;
+    height: 5%;
+}
+.foot{
+    color: #fff;
+    font-size: 0.857em;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.control{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.note{
+    font-family: sans-serif;
+}
+.hea{
+    justify-content: center;
+    align-items: center;
+}
+.menubar{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition-duration: 0.4s;
+    padding: 5px 10px;
+}
+.menubar:hover {
+    background-color: #447088;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+   
+  }
+  @media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 768px) {
+} 
+@media only screen and (min-width: 992px) {
+
+} 
+@media only screen and (min-width: 1200px) {
+}
